@@ -6,14 +6,23 @@ $main-sm-columns:       $grid-columns;
 $sidebar-sm-columns:    4;
 
 
-
 // Brand colors
 // -------------------------
 
 $brand-primary:         #27ae60;
+$red:                   #CD2028;
+$peach:                 #F8DC9F;
+$gray:                  #5D5D5D;
 
 
 // Glyphicons path
 // -------------------------
 
 $icon-font-path:        "../vendor/bootstrap-sass-official/assets/fonts/";
+
+
+
+// Typography
+// -------------------------
+$felttip-roman:          "felt-tip-roman",sans-serif;
+$felttip-woman:          "felt-tip-woman",sans-serif;

@@ -1,0 +1,18 @@
+.home {
+  .page-header {
+    display: none;
+  }
+
+  h1 {
+    text-align: center;
+    padding-bottom: $line-height-computed*2;
+    font-size: 32px;
+
+    br {
+      display: none;
+      @media (min-width: $screen-sm-min) {
+        display: block;
+      }
+    }
+  }
+}

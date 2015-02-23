@@ -1,1 +1,160 @@
-.banner { }
+.navbar-default {
+  background: $red; 
+
+  .navbar-brand {
+    color: $peach;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  .navbar-toggle {
+    z-index: 10;
+    position: relative;
+    background: darken($red, 10%) !important;
+    border-color: lighten($red, 30%) !important;
+
+    &:focus {
+      background: darken($red, 20%);
+    }
+
+    .icon-bar {
+      background-color: lighten($red, 30%) !important;
+    }
+  }
+
+  .navbar-collapse, .navbar-form  {
+    border: 0px;
+  }
+
+  .navbar-nav {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    > li {
+
+      &.active {
+        a {
+          background: transparent;
+          color: $peach;
+
+          &:hover {
+            color: $peach;
+            background: darken($red, 3%);
+          }
+        }
+      }
+
+      > a {
+        color: white;
+
+        &:hover {
+          color: $peach;
+          background: darken($red, 3%);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .navbar {
+    height: 155px;
+    background: transparent;
+    border-bottom: 1px solid #CD2028;
+    margin-bottom: 50px;
+
+    &:before {
+      background: $red;
+      height: 92px;
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    &:after {
+      background: url(../img/nav.png) bottom repeat-x;
+      height: 38px;
+      display: block;
+      content: "";
+      position: absolute;
+      top: 90px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+
+    .container {
+      min-height: 92px;
+    }
+
+    .navbar-brand {
+      //background-color: $red;
+      background: url(../img/header.png) center center no-repeat;
+      background-size: 585px 184px;
+      min-height: 184px;
+      border: 0px;
+      padding: 0;
+      margin: 0;
+      float: none;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+
+      span {
+        display: none;
+      }
+    }
+  }
+
+  #menu-primary-navigation {
+    margin-top: 130px;
+    z-index: 20;
+    position: relative;
+    width: 100%;
+
+    li {
+
+      &.menu-transportation, &.menu-activities, &.menu-register {
+        float: right;
+      }
+
+      &.menu-register { 
+        a {
+          margin-right: 0;
+        }
+      }
+
+      a {
+        padding: 0 0 0 12px;
+        margin: 0 8px 0 0;
+        color: $red;
+        background: url(../img/navarrow.png) left center no-repeat;
+
+        &:hover {
+          color: darken($red, 20%);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  #menu-primary-navigation {
+    li {
+      a {
+        margin: 0 60px 0 0;
+      }
+    }
+  }
+}

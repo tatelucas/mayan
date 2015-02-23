@@ -1,0 +1,42 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+// Body font
+body {
+  font-family: $felttip-roman;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.85em;
+  line-height: 1.85;
+  color: $gray;
+  margin-bottom: 67px; //for the sticky footer
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $felttip-woman;
+  font-style: normal;
+  font-weight: 400;
+}
+
+a {
+  @include transition(all .2s ease-in-out);
+  color: $red;
+
+  &:hover {
+    color: darken($red, 20%);
+  }
+}
+
+.highlight {
+  color: $red;
+  font-family: $felttip-woman;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+  #wpadminbar {
+    position: fixed;
+  }
+}

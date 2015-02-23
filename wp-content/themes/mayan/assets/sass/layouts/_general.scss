@@ -3,8 +3,9 @@
 
 // Main content area
 .main {
-  @include make-sm-column($main-sm-columns);
+  @include make-sm-column(10);
+  @include make-sm-column-offset(1);
   .sidebar-primary & {
-    @include make-sm-column($main-sm-columns - $sidebar-sm-columns);
+    @include make-sm-column(10 - $sidebar-sm-columns);
   }
 }

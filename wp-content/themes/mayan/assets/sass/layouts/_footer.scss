@@ -1,1 +1,26 @@
-.content-info { }
+.content-info { 
+  background: $red url(../img/nav.png) bottom center repeat-x;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 67px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+      text-align: center;
+
+      a {
+        color: $peach;
+
+        &:hover {
+          text-decoration: none;
+          color: lighten($peach, 10%);
+        }
+      }
+    }
+  }
+}
